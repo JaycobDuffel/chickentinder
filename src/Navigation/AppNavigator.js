@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import HomeScreen from '../Screens/HomeScreen';
+import AccountScreen from '../Screens/AccountScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,15 +19,6 @@ export default function AppNavigator() {
           ),
         }}
       />
-      {/* <Tab.Screen
-        name="Scan"
-        component={CameraScreen}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="camera" color={color} size={size} />
-          ),
-        }}
-      />
       <Tab.Screen
         name="Account"
         component={AccountScreen}
@@ -35,7 +27,7 @@ export default function AppNavigator() {
             <MaterialCommunityIcons name="account" color={color} size={size} />
           ),
         }}
-      /> */}
+      />
     </Tab.Navigator>
   );
 };
